@@ -106,7 +106,7 @@ try:
     dschf = HfDeepSpeedConfig(config.ds_config)
     setup_distribution(config)
         
-    tokenizer_path = "../llama-7b/tokenizer.model"
+    tokenizer_path = "tokenizer.model"
     if "b" in args.model_name:
         tokenizer = LlamaTokenizer.from_pretrained(tokenizer_path)
     else:
